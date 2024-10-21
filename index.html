@@ -14,23 +14,30 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="css/normalised.css">
     <link rel="stylesheet" href="css/styles.css">
-<!-- Prepare for second course --> 
+
     <script src="/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
-<!-- If we use bootstrap
 
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
- -->
-
-</head>
+  </head>
 
 <body> 
 
-    <h2>CRUD Fruites</h2>
+  <h1>CRUD FRUITES</h1>
 
-    
+  <p><strong>Agregar Fruita</strong></p>
+  <input type="text" id="novaFruita" placeholder="Nom fruita">
+  <button onclick="agregarFruita()">Agregar</button>
+
+  <p><strong>Actualitzar Fruita</strong></p>
+  <input type="text" id="fruitaActualitzada" placeholder="Nom Fruita">
+  <input type="number" id="indexActualitzar" placeholder="Numero fruita">
+  <button onclick="actualitzarFruita()">Actualitzar</button>
+
+  <p><strong>Eliminar Fruita</strong></p>
+  <input type="number" id="indexEliminar" placeholder="Numero fruita">
+  <button onclick="eliminarFruita()">Eliminar</button>
+
+  <h2>Llista de Fruites</h2>
 
 </body>
 </html>
