@@ -1,6 +1,7 @@
 let fruites = [];
 
 function mostrarFruites() {
+
     const llistaFruites = document.getElementById("llistaFruites");
     llistaFruites.innerHTML = "";
     if (fruites.length === 0) {
@@ -13,6 +14,7 @@ function mostrarFruites() {
 }
 
 function agregarFruita() {
+
     const novaFruita = document.getElementById("novaFruita").value;
     if (novaFruita) {
         fruites.push(novaFruita); //AFEGEIX LA FRUITA NOVA AL ARRAY FRUITES[]
@@ -25,7 +27,7 @@ function agregarFruita() {
 
 function actualitzarFruita() {
 
-
+    
 
 }
 
