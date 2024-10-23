@@ -23,22 +23,31 @@
 
   <h1>CRUD FRUITES</h1>
 
-  <p><strong>Agregar Fruita</strong></p>
-  <input type="text" id="novaFruita" placeholder="Nom fruita">
-  <button onclick="agregarFruita()">Agregar</button>
+  <div>
 
-  <p><strong>Actualitzar Fruita</strong></p>
-  <input type="text" id="fruitaActualitzada" placeholder="Nom Fruita">
-  <input type="number" id="indexActualitzar" placeholder="Numero fruita">
-  <button onclick="actualitzarFruita()">Actualitzar</button>
+    <p><strong>Afegir Fruita</strong></p>
+    <input type="text" id="novaFruita" placeholder="Nom fruita">
+    <button onclick="AfegirFruita()">Afegir</button>
+  
+    <p><strong>Actualitzar Fruita</strong></p>
+    <input type="text" id="fruitaActualitzada" placeholder="Nom Fruita">
+    <input type="number" id="indexActualitzar" placeholder="Numero fruita">
+    <button onclick="actualitzarFruita()">Actualitzar</button>
+  
+    <p><strong>Eliminar Fruita</strong></p>
+    <input type="number" id="indexEliminar" placeholder="Numero fruita">
+    <button onclick="eliminarFruita()">Eliminar</button>
+  
 
-  <p><strong>Eliminar Fruita</strong></p>
-  <input type="number" id="indexEliminar" placeholder="Numero fruita">
-  <button onclick="eliminarFruita()">Eliminar</button>
+  </div>
+  
+  <div>
 
-  <h2>Llista de Fruites</h2>
+    <h2>Llista de Fruites</h2>
 
-  <ul id="llistaFruites"></ul> <!-- MOSTRA EL ARRAY DE FRUITES + n.INDEX -->
+    <ul id="llistaFruites"></ul> <!-- MOSTRA EL ARRAY DE FRUITES + n.INDEX -->
+
+  </div>
 
 </body>
 </html>
