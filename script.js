@@ -29,7 +29,16 @@ function AfegirFruita() {
 
 function actualitzarFruita() {
 
-    
+    const numActualitzar = parseInt(document.getElementById("indexActualitzar").value) - 1;
+    const novaFruita = document.getElementById("fruitaActualitzada").value;
+    if (numActualitzar >= 0 && numActualitzar < fruites.length && novaFruita) {
+        fruites[numActualitzar] = novaFruita;
+        mostrarFruites();
+        document.getElementById("indexActualitzar").value = ""; //LLIMPIAR INPUT NUMERO
+        document.getElementById("fruitaActualitzada").value = ""; //LLIMPIAR INPUT NOM
+    } else {
+        alert("Numero o nom no valids");
+    }
 
 }
 
